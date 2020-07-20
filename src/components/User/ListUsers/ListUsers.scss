@@ -1,0 +1,35 @@
+@import "../../../scss/index.scss";
+
+.list-users {
+  &__not-users {
+    text-align: center;
+    font-size: 17px;
+    padding: 20px 0;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      margin-right: 15px !important;
+    }
+
+    p {
+      margin: 0;
+      font-size: 13px;
+
+      &:first-of-type {
+        color: #000;
+        font-weight: bold;
+      }
+      &:last-of-type {
+        color: $font-grey;
+      }
+    }
+  }
+}

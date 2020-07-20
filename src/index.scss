@@ -1,0 +1,41 @@
+@import "./scss/index.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background-grey-light;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.ui.form {
+  .btn-submit {
+    width: 100%;
+    background-color: $action;
+    color: $font-light;
+  }
+  .submit-error {
+    color: $danger;
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+}
+
+.ui.button.btn-action {
+  background-color: $action !important;
+  color: $font-light !important;
+  border-color: $action !important;
+}
+
+.ui.button.btn-danger {
+  background-color: $danger !important;
+  color: $font-light !important;
+  border-color: $danger !important;
+}

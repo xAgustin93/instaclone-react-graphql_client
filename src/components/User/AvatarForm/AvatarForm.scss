@@ -1,0 +1,21 @@
+@import "../../../scss/index.scss";
+
+.avatar-form {
+  display: flex;
+  flex-direction: column;
+
+  .ui.button {
+    background-color: $background-light;
+    border-bottom: 1px solid $border-grey;
+    padding: 18px 0;
+    margin: 0;
+    border-radius: 0;
+
+    &:nth-child(1) {
+      color: $action;
+    }
+    &:nth-child(2) {
+      color: $danger;
+    }
+  }
+}

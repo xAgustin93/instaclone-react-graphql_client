@@ -1,0 +1,55 @@
+@import "../../../scss/index.scss";
+
+.feed {
+  padding-top: 50px;
+  height: calc(100vh - 48px);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__box {
+    margin-bottom: 50px;
+    border: 1px solid $border-grey;
+
+    &-user {
+      background-color: $background-light;
+      padding: 15px !important;
+      color: $font-dark;
+
+      img {
+        margin-right: 15px !important;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &-photo {
+      height: 600px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.95;
+      }
+    }
+
+    &-actions {
+      padding: 5px 5px;
+
+      i {
+        margin-right: 10px !important;
+      }
+    }
+
+    &-form {
+      > form {
+        position: relative !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../../../scss/index.scss";
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h2 {
+    margin: 0 30px 0 0;
+  }
+
+  button {
+    padding: 5px 20px !important;
+    background-color: transparent !important;
+    border: 1px solid $border-grey !important;
+    &:hover,
+    &:focus {
+      background-color: transparent !important;
+    }
+  }
+}

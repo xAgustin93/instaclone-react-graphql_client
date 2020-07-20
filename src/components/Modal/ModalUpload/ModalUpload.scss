@@ -1,0 +1,60 @@
+@import "../../../scss/index.scss";
+
+.modal-upload {
+  border-radius: 15px !important;
+  overflow: hidden;
+  padding: 8px;
+  width: 650px;
+  height: 650px;
+
+  .dropzone {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed $border-dark;
+    border-radius: 15px !important;
+    position: relative;
+    z-index: 1;
+
+    i {
+      font-size: 50px;
+      color: $font-grey;
+    }
+    p {
+      margin-block-start: 20px;
+    }
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .btn-upload {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    z-index: 2;
+  }
+
+  .publishing {
+    p {
+      margin-top: 80px;
+      font-size: 18px;
+    }
+  }
+}

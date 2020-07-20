@@ -1,0 +1,14 @@
+@import "../../../scss/index.scss";
+
+.settigns-form {
+  display: flex;
+  flex-direction: column;
+
+  .ui.button {
+    background-color: $background-light;
+    border-bottom: 1px solid $border-grey;
+    padding: 18px 0;
+    margin: 0;
+    border-radius: 0;
+  }
+}
